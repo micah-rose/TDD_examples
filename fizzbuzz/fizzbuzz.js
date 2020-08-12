@@ -6,7 +6,8 @@
 // Get "FizzBuzz" when 15 is passed in, a multiple of 3 and 5
 
 function fizzBuzz(value){
-    ;
+    if (value%3 == 0) return 'Fizz';
+    return value.toString();
 }
 
 module.exports = fizzBuzz;
