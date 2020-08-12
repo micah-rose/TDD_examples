@@ -8,3 +8,5 @@
 function fizzBuzz(value){
     ;
 }
+
+module.exports = fizzBuzz;

@@ -1,5 +1,5 @@
 var expect =  require('chai').expect;
-
+const fizzBuzz = require('./fizzbuzz');
 
 it('can call fizzBuzz', function () {
     fizzBuzz(1);
