@@ -24,5 +24,9 @@ it('returns Fizz with 3 as the argument', function () {
 })
 
 it('returns Buzz with 5 as the argument', function () {
-    checkFizzBuzz(3, 'Buzz');
+    checkFizzBuzz(5, 'Buzz');
+})
+
+it('returns FizzBuzz with 15 as the argument', function () {
+    checkFizzBuzz(15, 'FizzBuzz');
 })
