@@ -7,7 +7,6 @@
 // Can apply discount rules to the total
 // Exception is thrown for item added without price
 
-
-
-
-module.exports = superMarket;
+module.exports = class Checkout {
+    
+};
