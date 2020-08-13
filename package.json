@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha fizzbuzz/fizzbuzz.test.js"
+    "test1": "mocha fizzbuzz/fizzbuzz.test.js",
+    "test2": "mocha supermarket/supermarket.test.js"
   },
   "repository": {
     "type": "git",
