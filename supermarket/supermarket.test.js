@@ -21,3 +21,11 @@ it('Can add multiple items and get correct total', function() {
 it('Can add discount rules', function(){
     checkout.addDiscount('a', 3, 2);
 })
+
+it('Can apply discount rules to total', function(){
+    checkout.addDiscount('a', 3, 2);
+    checkout.addItem('a');
+    checkout.addItem('a');
+    checkout.addItem('a');
+    expect(checkout.calculateTotal()).to.equal(2);
+})
