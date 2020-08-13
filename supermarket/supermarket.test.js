@@ -5,14 +5,8 @@ beforeEach(function(){
     checkout = new Checkout();
 })
 
-it('Can add item price', function() {
-    checkout.addItemPrice('a', 1);
-})
-
-it('Can add item', function(){
-    checkout.addItem('a');
-})
-
 it('Can calculate current total', function(){
+    checkout.addItemPrice('a', 1);
+    checkout.addItem('a');
     expect(checkout.calculateTotal()).to.equal(1);
 })
