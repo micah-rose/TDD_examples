@@ -8,15 +8,20 @@
 // Exception is thrown for item added without price
 
 module.exports = class Checkout {
-    addItemPrice(item, price){
+    constructor(){
+        this.prices = new Object();
+        this.total = 0;
+    }
 
+    addItemPrice(item, price){
+        this.prices[item] = price;
     }
 
     addItem(item){
-
+        this.total += this.prices[item];
     }
 
     calculateTotal(){
-        return 1;
+       return this.total;
     }
 };
