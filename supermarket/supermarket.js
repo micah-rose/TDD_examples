@@ -8,5 +8,7 @@
 // Exception is thrown for item added without price
 
 module.exports = class Checkout {
-    
+    addItemPrice(item, price){
+        
+    }
 };
