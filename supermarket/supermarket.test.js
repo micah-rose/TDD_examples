@@ -12,3 +12,7 @@ it('Can add item price', function() {
 it('Can add item', function(){
     checkout.addItem('a');
 })
+
+it('Can calculate current total', function(){
+    expect(checkout.calculateTotal()).to.equal(1);
+})
